@@ -1,12 +1,13 @@
 # **Flight Delay Time Statistics Dashboard**  
 
-This project is a **Dash-based web application** that visualizes flight delay time statistics using **Plotly** and **Pandas**. Users can input a specific year to analyze average delay times caused by various factors (carrier, weather, NAS, security, and late aircraft).  
+This project has a **Dash-based web application** that visualizes flight delay time statistics using **Plotly** and **Pandas**. Users can input a specific year to analyze average delay times caused by various factors (carrier, weather, NAS, security, and late aircraft).  It also includes **Exploratory Data Analysis** and plotting insights with interactive **plotly** graphs showing Flight Carrier, Airline Name, Destination State etc.
 
 ## **Dataset**  
-The application uses the **[Airline Delay Data](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0101EN-SkillsNetwork/Data%20Files/airline_data.csv)**, which includes:  
+The application uses the **[Airline Delay Data](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0101EN-SkillsNetwork/Data%20Files/airline_data.csv)**, which includes **110 variables** and **27,000 samples**:  
 - **Year**: The year of flight operation  
 - **Month**: The month of operation  
-- **Reporting_Airline**: The airline operating the flight  
+- **Reporting_Airline**: The airline operating the flight
+- **DestState**: The airline's destination state
 - **CarrierDelay**: Delay caused by the airline  
 - **WeatherDelay**: Delay caused by weather conditions  
 - **NASDelay**: Delay caused by National Aviation System  
@@ -52,11 +53,6 @@ pip install pandas plotly dash
  ┣ 📜 README.md      # Project documentation  
  ┣ 📜 requirements.txt  # List of dependencies  
 ```
-
-## **Screenshots**  
-| Sunburst Plot | Weather Delay |
-|--------------|--------------|
-| ![Carrier Plot](C:\Users\ACER\Downloads\newplot (2).png) | ![Weather Plot](C:\Users\ACER\Downloads\newplot (3).png) |
 
 ## **Future Improvements**  
 🔹 Add **real-time data updates**  
