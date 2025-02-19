@@ -1,1 +1,64 @@
-# US-Flight-Delay-Statistics-Analytics-Dashboard
+# **Flight Delay Time Statistics Dashboard**  
+
+This project is a **Dash-based web application** that visualizes flight delay time statistics using **Plotly** and **Pandas**. Users can input a specific year to analyze average delay times caused by various factors (carrier, weather, NAS, security, and late aircraft).  
+
+## **Dataset**  
+The application uses the **[Airline Delay Data](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0101EN-SkillsNetwork/Data%20Files/airline_data.csv)**, which includes:  
+- **Year**: The year of flight operation  
+- **Month**: The month of operation  
+- **Reporting_Airline**: The airline operating the flight  
+- **CarrierDelay**: Delay caused by the airline  
+- **WeatherDelay**: Delay caused by weather conditions  
+- **NASDelay**: Delay caused by National Aviation System  
+- **SecurityDelay**: Delay caused by security-related issues  
+- **LateAircraftDelay**: Delay due to previous flight issues  
+
+## **Features**  
+✔️ Interactive **line plots** showing average delay times for different airlines  
+✔️ Input field to select **year** dynamically  
+✔️ Responsive **Dash layout** for visualization  
+✔️ Uses **Plotly Express** for interactive figures  
+
+## **Installation**  
+To run this project locally, follow these steps:  
+
+### **1. Clone the Repository**  
+```bash
+git clone https://github.com/yourusername/flight-delay-dashboard.git
+cd flight-delay-dashboard
+```
+
+### **2. Install Dependencies**  
+```bash
+pip install -r requirements.txt
+```
+
+### **3. Run the Application**  
+```bash
+python app.py
+```
+Then, open **http://127.0.0.1:8050/** in your browser.  
+
+## **Dependencies**  
+Ensure you have the following libraries installed:  
+```bash
+pip install pandas plotly dash
+```
+
+## **Project Structure**  
+```
+📂 flight-delay-dashboard  
+ ┣ 📜 app.py         # Main Dash application script  
+ ┣ 📜 README.md      # Project documentation  
+ ┣ 📜 requirements.txt  # List of dependencies  
+```
+
+## **Screenshots**  
+| Sunburst Plot | Weather Delay |
+|--------------|--------------|
+| ![Carrier Plot](C:\Users\ACER\Downloads\newplot (2).png) | ![Weather Plot](C:\Users\ACER\Downloads\newplot (3).png) |
+
+## **Future Improvements**  
+🔹 Add **real-time data updates**  
+🔹 Implement **filtering by airport or airline**  
+🔹 Deploy on **Heroku or AWS**  
